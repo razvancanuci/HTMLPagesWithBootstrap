@@ -1,118 +1,168 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <style>
-
-
-    body, html {
-        height: 100%;
-        margin: 0;
-        font-family: "Times New Roman", Times, serif;
-        background: rgb(22,22,22);
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+      background: rgb(22, 22, 22);
     }
-    
+
     .tabcontent {
-        color: white;
-        padding: 100px 20px;
-        height: 100%;
+      color: white;
+      padding: 100px 20px;
+      height: 100%;
     }
-    
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        border-color: white;
-        text-align: center;
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      border-color: white;
+      text-align: center;
     }
-    th, td {
-        padding: 15px;
+
+    th,
+    td {
+      padding: 15px;
     }
-    
-    #navigate{
-        width:100%;
-        position:fixed;
+
+    #navigate {
+      width: 100%;
+      position: fixed;
     }
-    #current{
+
+    #current {
       background-color: #557;
     }
-    img{
-         width:300px;
-         height:200px;
-     }
-     p{
-       font-family: Arial, Helvetica, sans-serif;
-     }
-    </style>
+
+    img {
+      width: 300px;
+      height: 200px;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .begin {
+      background: url(imagini//bgbjj.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    .title {
+      padding-top: 39vh;
+      text-align: center;
+      color: white;
+      font-family: 'font', sans-serif;
+    }
+  </style>
 </head>
+
 <body>
-    <nav id="navigate" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="../home.html">Home</a>
-        <a class="navbar-brand" href="mma.html">MMA</a>
-        <a class="navbar-brand" href="kickbox.html">KickBoxing</a>
-        <a id="current" class="navbar-brand" href="bjj.html">BJJ</a>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a id="timer" class="nav-link"></a>
-              </li>
-            </ul>
-        </div>
-      </nav>
-      <script>
-        function printData()
-        {
-            var today = new Date();
-            var date = today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
-            document.getElementById("timer").innerHTML=date;
-        }
-        function show()
-        {
-            window.setInterval(printData,1000);
-        }
-        show(); 
-        </script>
-    <div class="tabcontent">
-    <center>
-        <br />
-        <h1 id="h3">Brazilian Jiu Jitsu</h1>
-        <br />
-    </center>
-    <p>Brazilian Jiu-Jitsu (BJJ; /dʒuːˈdʒɪtsuː/; Portuguese: [ˈʒiw ˈʒitsu], [ˈʒu ˈʒitsu], jiu-jitsu brasileiro) is a martial art and combat sport based on ground fighting (ne-waza) and submission holds. BJJ focuses on the skill of taking an opponent to the ground, controlling one's opponent, gaining a dominant position, and using a number of techniques to force them into submission via joint locks or chokeholds.</p>
-    <p>Brazilian Jiu-Jitsu was first developed around 1920 by Brazilian brothers Carlos, Oswaldo, Gastão Jr., George, and Hélio Gracie, after Carlos was taught traditional Kodokan judo by a travelling Japanese judoka, Mitsuyo Maeda, in 1917. Later, they marketed their own self-defense system based on Judo and named it Gracie Jiu-Jitsu. BJJ eventually came to be its own defined combat sport through the innovations, practices, and adaptation of Gracie Jiu-Jitsu and Judo, and became an essential martial art for modern MMA. Governing bodies such as the IBJJF work worldwide, and set the rules and standards to be held in sport BJJ competitions.</p>
-    <p>BJJ revolves around the concept that a smaller, weaker person can successfully defend him/herself against a bigger, stronger, heavier opponent by using leverage and weight distribution, taking the fight to the ground and using a number of holds and submissions to defeat them. BJJ training can be used for sport grappling and self-defense situations. Sparring, commonly referred to as "rolling" within the BJJ community, and live drilling plays a major role in training and the practitioner's development. BJJ can also be used as a method of promoting physical fitness, building character, and as a way of life.</p>
-    <p>Down below, there is a table with some bjj fighters:</p>
-    <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Current age</th>
-            <th scope="col">Photo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Royce Gracie</td>
-            <td>55</td>
-            <td><a href="https://en.wikipedia.org/wiki/Royce_Gracie"><img src="imagini/roycegracie.jpg"></a></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Andre Galvao</td>
-            <td>39</td>
-            <td><a href="https://en.wikipedia.org/wiki/Andr%C3%A9_Galv%C3%A3o"><img src="imagini/andregalvao.webp"></a></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Gordon Ryan</td>
-            <td>26</td>
-            <td><a href="https://en.wikipedia.org/wiki/Gordon_Ryan"><img src="imagini/gordonryan.webp"></a></td>
-          </tr>
-        </tbody>
-      </table>
+  <nav id="navigate" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../home.html">Home</a>
+    <a class="navbar-brand" href="mma.html">MMA</a>
+    <a class="navbar-brand" href="kickbox.html">KickBoxing</a>
+    <a id="current" class="navbar-brand" href="bjj.html">BJJ</a>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a id="timer" class="nav-link"></a>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <script>
+    function printData() {
+      var today = new Date();
+      var date = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+      document.getElementById("timer").innerHTML = date;
+    }
+    function show() {
+      window.setInterval(printData, 1000);
+    }
+    show(); 
+  </script>
+  <div class="begin">
+    <div class="title">
+      <h1 style="font-size: 60px;">BJJ</h1>
+    </div>
+  </div>
+  <div class="tabcontent">
+    <p>Brazilian Jiu-Jitsu (BJJ; /dʒuːˈdʒɪtsuː/; Portuguese: [ˈʒiw ˈʒitsu], [ˈʒu ˈʒitsu], jiu-jitsu brasileiro) is a
+      martial art and combat sport based on ground fighting (ne-waza) and submission holds. BJJ focuses on the skill of
+      taking an opponent to the ground, controlling one's opponent, gaining a dominant position, and using a number of
+      techniques to force them into submission via joint locks or chokeholds.</p>
+    <p>Brazilian Jiu-Jitsu was first developed around 1920 by Brazilian brothers Carlos, Oswaldo, Gastão Jr., George,
+      and Hélio Gracie, after Carlos was taught traditional Kodokan judo by a travelling Japanese judoka, Mitsuyo Maeda,
+      in 1917. Later, they marketed their own self-defense system based on Judo and named it Gracie Jiu-Jitsu. BJJ
+      eventually came to be its own defined combat sport through the innovations, practices, and adaptation of Gracie
+      Jiu-Jitsu and Judo, and became an essential martial art for modern MMA. Governing bodies such as the IBJJF work
+      worldwide, and set the rules and standards to be held in sport BJJ competitions.</p>
+    <p>BJJ revolves around the concept that a smaller, weaker person can successfully defend him/herself against a
+      bigger, stronger, heavier opponent by using leverage and weight distribution, taking the fight to the ground and
+      using a number of holds and submissions to defeat them. BJJ training can be used for sport grappling and
+      self-defense situations. Sparring, commonly referred to as "rolling" within the BJJ community, and live drilling
+      plays a major role in training and the practitioner's development. BJJ can also be used as a method of promoting
+      physical fitness, building character, and as a way of life.</p>
+    <p>Down below, there are some facmous bjj fighters:</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;  background-color: rgb(22,22,22);">
+            <a href="https://en.wikipedia.org/wiki/Royce_Gracie"><img class="card-img-top" src="imagini/roycegracie.jpg"
+                alt="Card image cap"></a>
+            <div class="card-body">
+              <p class="card-text">Name: Royce Gracie</p>
+              <p class="card-text">Current age: 55</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;  background-color: rgb(22,22,22);">
+            <a href="https://en.wikipedia.org/wiki/Andr%C3%A9_Galv%C3%A3o"><img class="card-img-top"
+                src="imagini/andregalvao.webp" alt="Card image cap"></a>
+            <div class="card-body">
+              <p class="card-text">Name: Andre Galvao</p>
+              <p class="card-text">Current age: 39</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem; background-color: rgb(22,22,22);">
+            <a href="https://en.wikipedia.org/wiki/Gordon_Ryan"><img class="card-img-top" src="imagini/gordonryan.webp"
+                alt="Card image cap"></a>
+            <div class="card-body">
+              <p class="card-text">Name: Gordon Ryan</p>
+              <p class="card-text">Current age: 26</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:xx-large;font-style:italic;">Bibliography</p>
+  <ul>
+    <li style="font-size:large">
+      https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu
+    </li>
+    <li style="font-size:large">
+      Images from Google
+    </li>
+  </ul>
+  </div>
 </body>
+
 </html>

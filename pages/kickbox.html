@@ -1,120 +1,180 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <style>
-    body, html {
-        height: 100%;
-        margin: 0;
-        font-family: "Times New Roman", Times, serif;
-        background: rgb(22,22,22);
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+      background: rgb(22, 22, 22);
     }
+
     .tabcontent {
-        color: white;
-        padding: 100px 20px;
-        height: 100%;
+      color: white;
+      padding: 100px 20px;
+      height: 100%;
     }
-    
-    table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        border-color: white;
-        text-align: center;
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      border-color: white;
+      text-align: center;
     }
-    th, td {
-        padding: 15px;
+
+    th,
+    td {
+      padding: 15px;
     }
-     img{
-         width:300px;
-         height:200px;
-     }
-    #navigate{
-        width:100%;
-        position:fixed;
+
+    img {
+      width: 300px;
+      height: 200px;
     }
-    #current{
+
+    #navigate {
+      width: 100%;
+      position: fixed;
+    }
+
+    #current {
       background-color: #557;
     }
-    p{
-       font-family: Arial, Helvetica, sans-serif;
-     }
-    </style>
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .begin {
+      background: url(imagini//bgk1.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    .title {
+      padding-top: 39vh;
+      text-align: center;
+      color: white;
+      font-family: 'font', sans-serif;
+    }
+  </style>
 </head>
+
 <body>
-    <nav id="navigate" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="../home.html">Home</a>
-        <a class="navbar-brand" href="mma.html">MMA</a>
-        <a id="current" class="navbar-brand" href="kickbox.html">KickBoxing</a>
-        <a class="navbar-brand" href="bjj.html">BJJ</a>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a id="timer" class="nav-link"></a>
-              </li>
-            </ul>
-        </div>
-      </nav>
-      <script>
-        function printData()
-        {
-            var today = new Date();
-            var date = today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
-            document.getElementById("timer").innerHTML=date;
-        }
-        function show()
-        {
-            window.setInterval(printData,1000);
-        }
-        show(); 
-        </script>
-    <div class="tabcontent">
-    <center>
-        <br />
-        <h1 id="h3">KickBoxing</h1> 
-        <br />
-    </center>
-    <p>Kickboxing is a group of stand-up combat sports and a form of boxing based on kicking and punching. The combat takes place in a boxing ring, normally with boxing gloves, mouthguards, shorts, and bare feet to favor the use of kicks. Kickboxing is practiced for self-defense, general fitness, or for competition. Some styles of kickboxing include Japanese kickboxing, French kickboxing, Chinese kickboxing and Thai kickboxing.
-    <p>Although since the dawn of humanity people have faced each other in hand-to-hand combat, the first documentation on the use of kicking and punching in sports combat is from ancient Greece and ancient India. But nevertheless, the term kickboxing originated in Japan, in the 1960s, and developed in the late 1950s from karate mixed with boxing, with Taekwondo, Muay Thai, and Savate also having some influence, with competitions held since then. American kickboxing originated in the 1970s and was brought to prominence in September 1974, when the Professional Karate Association (PKA) held the first World Championships. Historically, kickboxing can be considered a hybrid martial art formed from the combination of elements of various traditional styles. </p>
-    <p>This approach became increasingly popular since the 1970s, and since the 1990s, kickboxing has contributed to the emergence of mixed martial arts via further hybridization with ground fighting techniques from Brazilian jiu-jitsu, and folk wrestling.  
-      There is no single international governing body. International governing bodies include the World Association of Kickboxing Organizations (also known as WAKO), World Kickboxing Association, International Sport Karate Association, International Kickboxing Federation, and World Kickboxing Network, among others. Consequently, there is no single kickboxing world championship, and champion titles are issued by individual promotions, such as Glory, K-1 and ONE Championship among others. Bouts organized under different governing bodies apply different rules, such as allowing the use of knees or clinching, etc.</p>
+  <nav id="navigate" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="../home.html">Home</a>
+    <a class="navbar-brand" href="mma.html">MMA</a>
+    <a id="current" class="navbar-brand" href="kickbox.html">KickBoxing</a>
+    <a class="navbar-brand" href="bjj.html">BJJ</a>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a id="timer" class="nav-link"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    function printData() {
+      var today = new Date();
+      var date = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+      document.getElementById("timer").innerHTML = date;
+    }
+    function show() {
+      window.setInterval(printData, 1000);
+    }
+    show(); 
+  </script>
+  <div class="begin">
+    <div class="title">
+      <h1 style="font-size: 60px;">KickBoxing</h1>
+    </div>
+  </div>
+  <div class="tabcontent">
+    <p>Kickboxing is a group of stand-up combat sports and a form of boxing based on kicking and punching. The combat
+      takes place in a boxing ring, normally with boxing gloves, mouthguards, shorts, and bare feet to favor the use of
+      kicks. Kickboxing is practiced for self-defense, general fitness, or for competition. Some styles of kickboxing
+      include Japanese kickboxing, French kickboxing, Chinese kickboxing and Thai kickboxing.
+    <p>Although since the dawn of humanity people have faced each other in hand-to-hand combat, the first documentation
+      on the use of kicking and punching in sports combat is from ancient Greece and ancient India. But nevertheless,
+      the term kickboxing originated in Japan, in the 1960s, and developed in the late 1950s from karate mixed with
+      boxing, with Taekwondo, Muay Thai, and Savate also having some influence, with competitions held since then.
+      American kickboxing originated in the 1970s and was brought to prominence in September 1974, when the Professional
+      Karate Association (PKA) held the first World Championships. Historically, kickboxing can be considered a hybrid
+      martial art formed from the combination of elements of various traditional styles. </p>
+    <p>This approach became increasingly popular since the 1970s, and since the 1990s, kickboxing has contributed to the
+      emergence of mixed martial arts via further hybridization with ground fighting techniques from Brazilian
+      jiu-jitsu, and folk wrestling.
+      There is no single international governing body. International governing bodies include the World Association of
+      Kickboxing Organizations (also known as WAKO), World Kickboxing Association, International Sport Karate
+      Association, International Kickboxing Federation, and World Kickboxing Network, among others. Consequently, there
+      is no single kickboxing world championship, and champion titles are issued by individual promotions, such as
+      Glory, K-1 and ONE Championship among others. Bouts organized under different governing bodies apply different
+      rules, such as allowing the use of knees or clinching, etc.</p>
     <p>The term "kickboxing" (キックボクシング, kikkubokushingu) can be used in a narrow and in a broad sense.</p>
     <ul type="bullet">
-        <li>The narrow use is restricted to the styles that self-identify as kickboxing, i.e. Japanese kickboxing (with its spin-off styles or rules such as shootboxing and K-1), Dutch kickboxing, and American kickboxing.</li>
-        <li>In the wider sense, it includes all modern stand-up combat sports that allow both punching and kicking, including those mentioned above, Muay Thai, Kun Khmer, Savate, Adithada, Lethwei, Sanda, and certain styles of karate (especially full contact karate).</li>
+      <li>The narrow use is restricted to the styles that self-identify as kickboxing, i.e. Japanese kickboxing (with
+        its spin-off styles or rules such as shootboxing and K-1), Dutch kickboxing, and American kickboxing.</li>
+      <li>In the wider sense, it includes all modern stand-up combat sports that allow both punching and kicking,
+        including those mentioned above, Muay Thai, Kun Khmer, Savate, Adithada, Lethwei, Sanda, and certain styles of
+        karate (especially full contact karate).</li>
     </ul>
-    <p>Down below, there is a table with some kickboxers:</p>
-    <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Current age</th>
-            <th scope="col">Photo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Rico Verhoeven</td>
-            <td>32</td>
-            <td><a href="https://en.wikipedia.org/wiki/Rico_Verhoeven"><img src="imagini/ricoverhoeven.jpg"></a></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Daniel Ghita</td>
-            <td>40</td>
-            <td><a href="https://en.wikipedia.org/wiki/Daniel_Ghi%C8%9B%C4%83"><img src="imagini/danielghita.jpg"></a></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Peter Aerts</td>
-            <td>51</td>
-            <td><a href="https://en.wikipedia.org/wiki/Peter_Aerts"><img src="imagini/peteraerts.webp"></a></td>
-          </tr>
-        </tbody>
-      </table>
+    <p>Down below, there are some famous kickboxers:</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;  background-color: rgb(22,22,22);">
+            <a href="https://en.wikipedia.org/wiki/Peter_Aerts"><img class="card-img-top" src="imagini/peteraerts.webp"
+                alt="Card image cap"></a>
+            <div class="card-body">
+              <p class="card-text">Name: Peter Aerts</p>
+              <p class="card-text">Current age: 52</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;  background-color: rgb(22,22,22);">
+            <a href="https://en.wikipedia.org/wiki/Daniel_Ghi%C8%9B%C4%83"><img class="card-img-top"
+                src="imagini/danielghita.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+              <p class="card-text">Name: Daniel Ghita</p>
+              <p class="card-text">Current age: 40</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem; background-color: rgb(22,22,22);">
+            <a href="https://en.wikipedia.org/wiki/Rico_Verhoeven"><img class="card-img-top"
+                src="imagini/ricoverhoeven.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+              <p class="card-text">Name: Rico Verhoeven</p>
+              <p class="card-text">Current age: 32</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <p style="font-size:xx-large;font-style:italic;">Bibliography</p>
+  <ul>
+    <li style="font-size:large">
+      https://en.wikipedia.org/wiki/Kickboxing
+    </li>
+    <li style="font-size:large">
+      Images from Google
+    </li>
+  </ul>
+  </div>
 </body>
+
 </html>
